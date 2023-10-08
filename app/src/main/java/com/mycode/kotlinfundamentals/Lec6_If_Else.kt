@@ -36,14 +36,17 @@ fun main() {
     val height = 172
     val h = if (height>180){
         println("player have more ability to fight with this height")
+        // return the value for this block
         180
     }
     else if (height<165){
         println("player have less ability to fight with this height")
+        // return the value for this block
         165
     }
     else{
         println("cannot determine has ability or not with this height")
+        // return the value of height
         height
     }
     println("the player has above ability with $h cm height")
@@ -51,19 +54,30 @@ fun main() {
     age = 34
     val currentAge = if (age>=23){
         println("You are eligible to stand in politics")
+        // return the value for this block
         23
     }
     else if (age>=21){
         println("You are eligible to marry")
+        // return the value for this block
         21
     }
     else if (age>=18){
         println("You are eligible get licence")
+        // return the value for this block
         18
     }
     else{
         println("You are younger")
+        // return the value of age
         age
     }
     println("Your current age is : $currentAge")
+
+    /*
+    Here, in If - else statement condition are executed from top to bottom
+    in if - else statement if 1st condition met then next condition will not be executed
+    Kotlin provides to assign if - else statement to a variable
+     */
+
 }
