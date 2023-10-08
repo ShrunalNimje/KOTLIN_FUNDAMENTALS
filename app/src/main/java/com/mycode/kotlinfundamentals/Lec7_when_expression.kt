@@ -2,6 +2,12 @@ package com.mycode.kotlinfundamentals
 
 // when statement in Kotlin
 
+/*
+ Kotlin’s "when" expression is the replacement of the switch statement
+ from other languages like C, C++, and Java.
+ It is compact and more powerful than switch statements.
+ */
+
 fun main() {
     val age = 20
 
@@ -42,5 +48,11 @@ fun main() {
         else -> "non of the above"
     }
     print("$data is $result")
+
+    /*
+    Here, in "when" expression condition are executed from top to bottom
+    in "when" expression if 1st condition met then next condition will not be executed
+    Kotlin also provides to assign when expression to a variable
+     */
 
 }
