@@ -7,7 +7,7 @@ class Person(name:String = "Bhavanish", age:Int = 23){
     var name : String = "Anushka"
     var age : Int? = null
     var state : String? = null
-    var contry : String = "India"
+    var country : String = "India"
     var myHobby : String = "to do Coding"
 
     init {
@@ -18,14 +18,14 @@ class Person(name:String = "Bhavanish", age:Int = 23){
 
     // member functions - Methods
     fun stateHobby(){
-        println("$name\'s hobby is $myHobby and I'm from $state, $contry")
+        println("$name\'s hobby is $myHobby and I'm from $state, $country")
     }
 
     // member constructors
-    constructor(name: String, age: Int, contry: String) :this(name, age){
+    constructor(name: String, age: Int, country: String) :this(name, age){
         this.name = name
         this.age = age
-        this.contry = contry
+        this.country = country
 //        print("This is $name and ")
 //        println("Now I'm $age year old")
     }
@@ -38,7 +38,7 @@ fun main() {
 
     val bhavanish = Person()
     bhavanish.state = "Delhi"
-    bhavanish.contry = "India"
+    bhavanish.country = "India"
     bhavanish.myHobby = "play cricket"
     bhavanish.stateHobby()
 
