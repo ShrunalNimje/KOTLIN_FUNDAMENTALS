@@ -25,9 +25,14 @@ fun main(){
     println("First element : "+c2)
     println("Last element : "+c3)
 
-    // Character : we can assign any single value, symbols or character
+    /* Character : we can assign any single value, symbols or character
+       in case of to assign a symbols we can use the unicode using the backslash
+    */
     val c: Char ='S'
     val c1: Char = '#'
+
+    val myChar = '\u00A9' // --> here 00A9 is unicode of output which has displayed
+    println(myChar)
 
     // Boolean : It has two probabilities which is either true or false
     val b: Boolean = true
