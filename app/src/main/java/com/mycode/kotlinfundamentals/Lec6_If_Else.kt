@@ -3,7 +3,18 @@ package com.mycode.kotlinfundamentals
 // If - Else statement in Kotlin
 
 fun main() {
-    var age = 20
+    var age : Int?= null
+
+    println("Enter your age : ")
+    age = readln().toInt()
+
+    /*
+    readln() used to read the input from the user as a string
+    and toInt() used to parses the string as an Int
+
+    val ageInt = readln()
+    age = ageInt.toInt()
+    */
 
     // If statement
     if (age>18){
@@ -33,7 +44,10 @@ fun main() {
     }
 
     // If - Else statement as expression
-    val height = 172
+    var height : Any? = null
+    println("Enter your height : ")
+    height = readln().toInt()
+
     val h = if (height>180){
         println("player have more ability to fight with this height")
         // return the value for this block
@@ -51,7 +65,9 @@ fun main() {
     }
     println("the player has above ability with $h cm height")
 
-    age = 34
+    println("Enter your age : ")
+    age = readln().toInt()
+
     val currentAge = if (age>=23){
         println("You are eligible to stand in politics")
         // return the value for this block
