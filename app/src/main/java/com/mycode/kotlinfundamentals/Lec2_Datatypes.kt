@@ -33,6 +33,12 @@ fun main(){
     val b: Boolean = true
     val b1: Boolean = false
 
+    // Unsigned : it used when we want to assign only positive values starts from '0'
+    var age : UByte = 21u
+    println(age)
+    age = 37u
+    println(age)
+
     /*
     But we don't have to do the above things
     In Kotlin we can directly assign any value to the variable
