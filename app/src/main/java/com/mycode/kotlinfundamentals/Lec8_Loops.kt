@@ -12,9 +12,10 @@ fun main() {
     }
     println("\nWhile loop is done!")
 
-    var num = 100
+    println("Enter your number : ")
+    var num = readln().toInt()
     while (num>=10){
-        print("$num ")
+        print("$num is greater than 10 \n")
         num-=5
     }
     println("\nWhile loop is done!")
