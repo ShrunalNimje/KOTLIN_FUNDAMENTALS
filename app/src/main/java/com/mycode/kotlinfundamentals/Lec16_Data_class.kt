@@ -85,7 +85,7 @@ fun main() {
     phone.chargeBattery(14)
 
     val myCoffee = CoffeeDetails(-2,"Shrunal")
-    myCoffee.sugar = 1
+    myCoffee.sugar = 2
     coffeeMachine(myCoffee)
 
 }
