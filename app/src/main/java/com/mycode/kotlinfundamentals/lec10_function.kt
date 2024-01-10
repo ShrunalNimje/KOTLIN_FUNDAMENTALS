@@ -2,15 +2,15 @@ package com.mycode.kotlinfundamentals
 
 // functions in Kotlin
 
-fun coffeeMachine(sugar : Int, name : String){
-    if (sugar == 1 || sugar == 0){
-        println("$sugar spoon of sugar added for $name")
+fun coffeeMachine(coffeeDetails: CoffeeDetails){
+    if (coffeeDetails.sugar == 1 || coffeeDetails.sugar == 0){
+        println("${coffeeDetails.sugar} spoon of sugar added for ${coffeeDetails.name}")
     }
-    else if (sugar < 0){
-        println("$name ! \nPlease put the valid amt of sugar")
+    else if (coffeeDetails.sugar < 0){
+        println("${coffeeDetails.name} ! \nPlease put the valid amt of sugar")
     }
     else{
-        println("$sugar spoons of sugar added for $name")
+        println("${coffeeDetails.sugar} spoons of sugar added for ${coffeeDetails.name}")
     }
 }
 
@@ -55,7 +55,5 @@ fun main() {
     val name = readln()
     println("how much no. of spoon of sugar you want to add in coffee ? ")
     val sugar = readln().toInt()
-    // getting input from user in function
-    coffeeMachine(sugar, name)
 
 }
