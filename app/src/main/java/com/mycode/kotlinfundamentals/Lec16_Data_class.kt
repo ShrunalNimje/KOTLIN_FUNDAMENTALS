@@ -2,6 +2,13 @@ package com.mycode.kotlinfundamentals
 
 // data class in Kotlin
 
+data class CoffeeDetails(var sugar : Int, val name : String){
+    init {
+        println("$sugar no. of spoon added for $name")
+    }
+
+}
+
 data class One(var id: Int,var age:Int,var name:String){
     // data class must have minimum one parameter
 
@@ -76,4 +83,9 @@ fun main() {
     // solution of Challenge - Class
     val phone = MyMobilePhone("Android","XioMi","Redmi Note 7s")
     phone.chargeBattery(14)
+
+    val myCoffee = CoffeeDetails(-2,"Shrunal")
+    myCoffee.sugar = 1
+    coffeeMachine(myCoffee)
+
 }
