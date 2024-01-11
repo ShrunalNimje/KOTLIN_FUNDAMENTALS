@@ -25,6 +25,15 @@ fun main() {
     months.add("April")
     val month1 = listOf("May", "June", "July")
 
+    println("For loop in list : ")
+    for(item in 0 until months.size){
+        println(months[item])
+        if (months[item] == "Feb"){
+            println("it's feb")
+            break
+        }
+    }
+
     // to override element at particular index
     months[1] = "Dec"
     months.addAll(month1)
@@ -38,6 +47,9 @@ fun main() {
     // to remove direct element of month list
     months.remove("Dec")
     println("After removing elements of months list : $months")
+
+    months.set(4,"Dec")
+    println(months)
 
     // return true if both will true
     // println(months == month1)
@@ -55,5 +67,19 @@ fun main() {
      there are multiple methods which are used by kotlin
      this are just few of this
       */
+
+    // Quiz for list
+    val fruits = mutableListOf<String>("Apple", "banana", "orange", "grapes")
+    println(fruits)
+    fruits.add(2,"dragon fruit")
+    println(fruits)
+    fruits.remove("grapes")
+    println(fruits)
+    if (fruits.contains("grapes")){
+        println("grapes are in fruit list")
+    }
+    else{
+        println("grapes doesn't contain in fruit list")
+    }
 
 }
